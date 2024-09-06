@@ -1,0 +1,112 @@
+.footer{
+    
+   border: 1px solid rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+
+
+
+}
+.newsletter input{
+  
+width: 250px;
+height: 35px;
+margin-left: 20px;
+border: none;
+outline: none;
+background-color: whitesmoke;
+color: black;
+font-family: poppins;
+font-size: 16px;
+border-radius: 10px;
+
+
+
+
+
+}
+.newsletter button{
+    width: 120px;
+    height: 35px;
+    border-radius: 70px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+
+
+}
+.newsletter p{
+
+text-align: center;
+
+
+
+}
+.footer-logo p{
+
+  color: black;
+  font-size: 36px;
+  font-weight: 400;
+
+}
+
+.footer-links{
+
+display: flex;
+list-style: none;
+gap: 50px;
+color: black;
+font-size: 17px;
+
+
+
+}
+.footer-links li{
+ cursor: pointer;
+
+}
+.footer-social-icon{
+
+     display: flex;
+     gap: 20px;
+
+
+
+}
+.footer-icon-container{
+
+   padding: 10px;
+   padding-bottom: 6px;
+   background: white;
+   
+
+
+
+
+}
+.footer-copyright{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+   margin-bottom: 30px;
+   color: black;
+font-size: 16px;
+
+}
+
+.footer-copyright hr{
+   width: 60%;
+   border: none;
+border-radius: 10px;
+height: 3px;
+background: #c7c7c7;
+
+
+}

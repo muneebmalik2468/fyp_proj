@@ -1,0 +1,250 @@
+.HomeBanner{
+width: 100%;
+color: white;
+
+
+
+}
+.HomeClothingBanner{
+    float: left;
+
+    height: 100vh;
+    width: 33.33%;
+   
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: black;
+
+}
+.HomeClothingBannerimg{
+
+    height: 100vh;
+    width: 100%;
+   
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+}
+.HomeClothingBannerimg img{
+    width: 100%;
+    object-fit: cover;
+    
+
+
+}
+
+.HomeClothingBanner-left{
+
+display: flex;
+flex-direction:column ;
+
+justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size:25px ;
+font-weight: 400;
+
+
+
+}
+.HomeClothingBanner-left h2{
+
+    color: white;
+}
+.HomeClothingBanner-left button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 30px;
+  width: 140px;
+  gap:15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: -20px;
+  margin-left:4px ;
+  margin-right: 3px;
+  cursor: pointer;
+
+
+}
+.HomeClothingBanner-left button:hover{
+
+ background-color: white;
+ color: black;
+
+}
+
+
+.HomeBeautyBanner{
+    float: left;
+    height: 100vh;
+    width: 33.33%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: black;
+
+}
+.HomeBeautyBannerimg{
+
+    height: 100vh;
+    width: 100%;
+ 
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+}
+.HomeBeautyBannerimg img{
+    width: 100%;
+    object-fit: cover;
+
+
+}
+.HomeBeautyBanner-left{
+
+display: flex;
+flex-direction:column ;
+
+justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size:25px ;
+font-weight: 400;
+
+
+
+}
+
+
+.HomeBeautyBanner-left h2{
+  color: white;
+
+
+}
+.HomeBeautyBanner-left button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 30px;
+  width: 140px;
+  gap:15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: -20px;
+  margin-left:4px ;
+  margin-right: 3px;
+  cursor: pointer;
+
+
+}
+.HomeBeautyBanner-left button:hover{
+
+ background-color: white;
+ color: black;
+
+}
+
+
+
+
+.HomeAccessoriesBanner{
+
+    height: 100vh;
+    width: 33.32%;
+   float: left;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: black;
+
+}
+.HomeAccessoriesBannerimg{
+
+    height: 100vh;
+    width: 100%;
+   
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+}
+
+
+.HomeAccessoriesBannerimg img{
+    width: 100%;
+    object-fit: cover;
+
+
+}
+.HomeAccessoriesBanner-left{
+
+display: flex;
+flex-direction:column ;
+
+justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size:25px ;
+font-weight: 400;
+
+
+
+}
+.HomeAccessoriesBanner-left h2{
+
+color: white;
+
+}
+
+.HomeAccessoriesBanner-left button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 30px;
+  width: 140px;
+  gap:15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: -20px;
+  margin-left:4px ;
+  margin-right: 3px;
+  cursor: pointer;
+
+
+}
+.HomeAccessoriesBanner-left button:hover{
+
+ background-color: white;
+ color: black;
+
+}
