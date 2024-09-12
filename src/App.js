@@ -8,13 +8,12 @@ import { Product } from './Pages/Product';
 import { Cart } from './Pages/Cart';
 import { AboutUs } from './Pages/AboutUs';
 import { Login } from './Pages/Login';
-import { HomeBanner } from './Components/HomeBanner/HomeBanner';
 import { Footer } from './Components/Footer/Footer';
-import {Item} from './Components/Item/Item'
-import { product } from './Pages/Product';
+import { CheckoutPage } from './Pages/CheckoutPage';
 import Clothesbanner from './Components/Assets/Clothesbanner.png'
 import HomeMakeupbnanner from './Components/Assets/HomeMakeupbnanner.png'
 import AccessoriesBanner from './Components/Assets/AccessoriesBanner.png'
+
 
 
 
@@ -27,7 +26,7 @@ function App() {
     <div>
       <BrowserRouter>
      <Navbar/>
-     
+
      <Routes>
      <Route  path='/' element={<Home/>}/>
      <Route path='/Clothing'   element={<Homecategory  banner={Clothesbanner}  category="women"/>}/>
@@ -39,11 +38,11 @@ function App() {
      <Route path='/cart'  element={<Cart/>}/>
      <Route path='/Aboutus' element={<AboutUs/>}/>
      <Route path='/Login'   element={<Login/>}/>
+     <Route path='/Proceed-To-Checkout'   element={<CheckoutPage/>} />
      </Routes>
 
      <Footer/>
     
-
      </BrowserRouter>
     </div>
   );

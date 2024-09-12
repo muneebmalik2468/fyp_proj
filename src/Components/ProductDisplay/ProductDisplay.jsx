@@ -1,27 +1,19 @@
- import React from 'react'
+ import React, { useContext } from 'react'
  import './ProductDisplay.css';
 import star_icon from '../Assets/star_icon.png';
 import star_dull_icon from '../Assets/star_dull_icon.png';
+import { Homecontext } from '../../Context/Homecontext';
 
 
 export const ProductDisplay = ({product}) => {
- 
+   const {addToCart}=useContext(Homecontext);
       
   return (
     <div   className='productdisplay' >
         <div   className='productdisplay-left' >
-        <div   className='productdisplay-img-list' >
-           <img src={product?.image} alt="" />
-           <img src={product?.image} alt="" />
-           <img src={product?.image} alt="" />
-           <img src={product?.image} alt="" />
-       
-           </div>
         <div className='productdisplay-img'>
-
         <img   className='productdisplay-main-img'  src={product?.image} alt="" />
         </div>
-       
         </div>
 
         <div   className='productdisplay-right' >
@@ -49,7 +41,7 @@ export const ProductDisplay = ({product}) => {
 
    
 
-<button>ADD TO CART</button>
+<button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
 <p className='productdisplay-right-category'  > <span>Category:</span>Women, Beauty</p>
 <p className='productdisplay-right-category'  > <span>Tags:</span>Modern, Latest</p>
 

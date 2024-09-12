@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import  footer_logo from '../Assets/logo_big.png'
+
 import instagram_icon from '../Assets/instagram_icon.png'
 import pintester_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
@@ -11,13 +11,6 @@ export const Footer = () => {
       <div   className='footer-logo'>
        
         <p>GlamorHub</p>
-      </div>
-      <div  className='newsletter'>
-        <input  type='email'   placeholder='your Email' />
-        <button>Subscribe</button>
-        <p>
-      <b>Subscribe</b> to our website and stay Update.
-        </p>
       </div>
 
       <ul  className='footer-links'>

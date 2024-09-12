@@ -11,22 +11,8 @@ display: flex;
 gap: 17px;
 
 
-
 }
-.productdisplay-img-list{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
 
-
-
-}
-.productdisplay-img-list img{
-
-
-
-    height: 138px;
-}
 .productdisplay-main-img{
     width: 500px;
     height: 600px;

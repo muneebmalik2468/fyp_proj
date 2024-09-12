@@ -32,6 +32,10 @@
    
    
 }
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+}
 
 .nav-menu hr{
   border: none;

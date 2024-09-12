@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import './Homecategory.css';
 import '../Components/Item/Item.css';
  import { Homecontext } from '../Context/Homecontext';
- import dropdown_icon from '../Components/Assets/dropdown_icon.png'
  import Item from '../Components/Item/Item'
 
 
@@ -19,9 +18,7 @@ import '../Components/Item/Item.css';
         <p>
           <span>Showing 1-12</span> out of 36 products
         </p>
-        <div className='Homecategory-Sort'>
-          Sort by <img src={dropdown_icon} alt="" />
-        </div>
+       
       </div>
       <div className='Homecategory-products'>
         {all_product.map((item, i) => {

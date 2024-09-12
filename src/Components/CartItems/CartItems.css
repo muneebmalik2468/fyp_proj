@@ -1,0 +1,104 @@
+.cartitems{
+
+margin: 100px 170px;
+
+
+}
+.cartitems hr{
+
+  height:3px;
+  background: #e2e2e2;
+  border: 0;
+
+
+}
+.cartitems-format-main{
+
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    color: #454545;
+    padding: 20px 0px;
+    font-size: 18px;
+    font-weight: 600px;
+}
+.cartitems-format{
+     font-size: 17px;
+     font-weight: 500;
+  
+
+
+}
+.carticon-product-icon{
+
+height: 62px;
+
+
+}
+.carticon-product-icon{
+
+    width: 65px;
+    height:70px;
+    object-fit: cover;
+}
+.cartitems-remove-icon{
+
+   width: 15px;
+   margin: 0px 40px;
+   cursor: pointer;
+}
+.cartitems-quantity{
+
+ width: 64px;
+ height: 50px;
+ border: 2px solid #ebebeb;
+background: white;
+
+}
+
+.cartitems-down{
+
+
+    display: flex;
+    margin: 100px 0px;
+}
+
+.cartitems-total{
+
+   flex: 1;
+   flex-direction: column;
+   gap: 40px;
+
+
+}
+
+.cartitems-total-item{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+
+}
+
+.cartitems-total button{
+
+  width: 262px;
+  height: 58px;
+   border: 1px solid black;
+   background: white;
+   outline: none;
+   color: black;
+   font-size: 17px;
+   font-weight: 400;
+   cursor: pointer;
+
+}
+.cartitems-total button:hover{
+
+   background:black ;
+   color: white;
+   transition: 0.75s;
+
+}
