@@ -64,28 +64,3 @@
 .Homecategory-products .Item{
    width: calc(33.33% - 16px);
 }
-.Homecategory-load-more{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 100px auto;
-  margin-bottom: 40px;
-  width: 233px;
-  height: 69px;
-  border-radius: 75px;
-  background-color: white;
-  color: black;
-border: 1px solid black;
-cursor: pointer;
-font-size: 18px;
-font-weight: 500;
-}
-.Homecategory-load-more:hover{
-
-   background-color: black;
-   color: white;
-   transition: 0.7s;
-
-
-}

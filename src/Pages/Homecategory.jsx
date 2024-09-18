@@ -39,10 +39,7 @@ import '../Components/Item/Item.css';
 
       </div>
 
-     <div   className='Homecategory-load-more'>
-       Explore More
-
-     </div>
+    
 
 
    </div>

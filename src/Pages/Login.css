@@ -59,10 +59,10 @@ color: black;
 font-size: 18px;
 font-weight:500;
 }
-.login-login span{
+.login-login link{
+    
+ text-decoration: none;
 
-color: rgba(214, 22, 22, 0.753);
-font-weight: 600;
 
 }
 .login-agree{

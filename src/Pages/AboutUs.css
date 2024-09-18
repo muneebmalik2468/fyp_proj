@@ -59,3 +59,48 @@ p {
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+.info-box{
+padding-top: 10px;
+text-align: justify;
+width: 48%;
+position: relative;
+left: auto;
+
+}
+
+
+.info-box-1{
+   
+    text-align: justify;
+    width: 48%;
+    position: relative;
+    left: 50%;
+
+    
+ }
+
+
+ .info-box-2{
+
+  
+    text-align: justify;
+    width: 48%;
+    position: relative;
+     left: auto;
+    
+   
+  
+ }
+
+
+ .info-box-3{
+
+    text-align: justify;
+    width: 48%;
+    height: 330px;
+    position: relative;
+     left: 50%;
+  
+ }

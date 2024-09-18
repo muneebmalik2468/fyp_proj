@@ -26,7 +26,7 @@ const{getTotalCartitems}=useContext(Homecontext);
       <li onClick={()=>{setmenu("AboutUs")}}>  <Link   style={{textDecoration: 'none'}} to='/AboutUs'> About Us</Link>{menu==="AboutUs"?<hr/>:<></> }</li>
      </ul>
      <div className='nav-login-cart'>
-      <Link to='/Login'>  <button>Login</button></Link>
+      <Link to='/Login'>  <button>Account</button></Link>
      <Link to='/cart'> <img src={cart_icon} alt=''/>   </Link>
       
       <div className='nav-cart-count'>{ getTotalCartitems()}</div>
