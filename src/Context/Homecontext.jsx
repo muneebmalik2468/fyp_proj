@@ -1,24 +1,51 @@
 import React, { createContext, useState, useEffect } from "react";
-import all_product from "../Components/Assets/all_product";
+// import all_product from "../Components/Assets/all_product";
 
 export const Homecontext = createContext(null);
 
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let index = 0; index < all_product.length; index++) {
+  for (let index = 0; index < 300+1; index++) {
     cart[index] = 0; 
   }
   return cart;
 }
 
+
 const HomecontextProvider = (props) => {
+  const [all_product, setAll_Product] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultCart());
   
+  useEffect(()=>{
+    fetch('http://localhost:4000/allproducts').then((response)=>response.json()).then((data)=>setAll_Product(data))
+    if(localStorage.getItem('auth-token')){
+      fetch('http://localhost:4000/getcart',{
+        method:'POST',
+        headers:{
+          Accept:'application/form-data',
+          'auth-token':`${localStorage.getItem('auth-token')}`,
+          'Content-Type':'application/json',
+        },
+        body:"",
+      }).then((response)=>response.json()).then((data)=>setCartItems(data));
+    }
+  },[])
 
   
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    if(localStorage.getItem('auth-token')){
+      fetch('http://localhost:4000/addtocart',{
+        method:'POST',
+        headers:{
+          Accept:'application/form-data',
+          'auth-token':`${localStorage.getItem('auth-token')}`,
+          'Content-Type':'application/json',
+        },
+        body:JSON.stringify({"itemId":itemId}),
+      }).then((response)=>response.json()).then((data)=>console.log(data));
+    }
   };
 
  
@@ -49,6 +76,17 @@ const HomecontextProvider = (props) => {
   
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: Math.max(prev[itemId] - 1, 0) }));
+    if(localStorage.getItem('auth-token')){
+      fetch('http://localhost:4000/removecart',{
+        method:'POST',
+        headers:{
+          Accept:'application/form-data',
+          'auth-token':`${localStorage.getItem('auth-token')}`,
+          'Content-Type':'application/json',
+        },
+        body:JSON.stringify({"itemId":itemId}),
+      }).then((response)=>response.json()).then((data)=>console.log(data));
+    }
   };
 
  
