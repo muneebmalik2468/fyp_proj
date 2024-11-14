@@ -1,0 +1,360 @@
+[{
+  "_id": {
+    "$oid": "66ed652843264140c9740aa2"
+  },
+  "id": 1,
+  "name": "New Arrival",
+  "image": "http://localhost:8000/images/product_1726833960111.png",
+  "category": "women",
+  "new_price": 50,
+  "old_price": 60,
+  "createdAt": {
+    "$date": "2024-09-20T12:06:00.130Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:06:00.130Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed654143264140c9740aa5"
+  },
+  "id": 2,
+  "name": "New Cloth",
+  "image": "http://localhost:8000/images/product_1726833984982.png",
+  "category": "women",
+  "new_price": 60,
+  "old_price": 70,
+  "createdAt": {
+    "$date": "2024-09-20T12:06:25.007Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:06:25.007Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed656143264140c9740aaa"
+  },
+  "id": 3,
+  "name": "Fashion ",
+  "image": "http://localhost:8000/images/product_1726834017464.png",
+  "category": "women",
+  "new_price": 35,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:06:57.477Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:06:57.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed657c43264140c9740aad"
+  },
+  "id": 4,
+  "name": "Trends",
+  "image": "http://localhost:8000/images/product_1726834044240.png",
+  "category": "women",
+  "new_price": 30,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:07:24.251Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:07:24.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed65a643264140c9740ab2"
+  },
+  "id": 5,
+  "name": "Clothing",
+  "image": "http://localhost:8000/images/product_1726834086272.png",
+  "category": "women",
+  "new_price": 45,
+  "old_price": 50,
+  "createdAt": {
+    "$date": "2024-09-20T12:08:06.284Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:08:06.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed65cd43264140c9740ab5"
+  },
+  "id": 6,
+  "name": "Women Cloths",
+  "image": "http://localhost:8000/images/product_1726834125076.png",
+  "category": "women",
+  "new_price": 65,
+  "old_price": 70,
+  "createdAt": {
+    "$date": "2024-09-20T12:08:45.087Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:08:45.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed65ea43264140c9740ab8"
+  },
+  "id": 7,
+  "name": "Best Selling",
+  "image": "http://localhost:8000/images/product_1726834154389.png",
+  "category": "women",
+  "new_price": 80,
+  "old_price": 90,
+  "createdAt": {
+    "$date": "2024-09-20T12:09:14.432Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:09:14.432Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed669343264140c9740abd"
+  },
+  "id": 8,
+  "name": "Ear Rings",
+  "image": "http://localhost:8000/images/product_1726834323268.jpg",
+  "category": "Accessories",
+  "new_price": 15,
+  "old_price": 20,
+  "createdAt": {
+    "$date": "2024-09-20T12:12:03.284Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:12:03.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed66a743264140c9740ac0"
+  },
+  "id": 9,
+  "name": "Gold Chain",
+  "image": "http://localhost:8000/images/product_1726834343334.jpg",
+  "category": "Accessories",
+  "new_price": 25,
+  "old_price": 30,
+  "createdAt": {
+    "$date": "2024-09-20T12:12:23.346Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:12:23.346Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed66cb43264140c9740ac3"
+  },
+  "id": 10,
+  "name": "Decent Ear Rings",
+  "image": "http://localhost:8000/images/product_1726834379075.jpg",
+  "category": "Accessories",
+  "new_price": 25,
+  "old_price": 30,
+  "createdAt": {
+    "$date": "2024-09-20T12:12:59.401Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:12:59.401Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed66e443264140c9740ac6"
+  },
+  "id": 11,
+  "name": "Stylish",
+  "image": "http://localhost:8000/images/product_1726834404596.jpg",
+  "category": "Accessories",
+  "new_price": 30,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:13:24.616Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:13:24.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed670c43264140c9740acb"
+  },
+  "id": 12,
+  "name": "Best Selling",
+  "image": "http://localhost:8000/images/product_1726834444429.jpg",
+  "category": "Accessories",
+  "new_price": 35,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:14:04.466Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:14:04.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed673343264140c9740ace"
+  },
+  "id": 13,
+  "name": "Diamond Ring",
+  "image": "http://localhost:8000/images/product_1726834483005.jpg",
+  "category": "Accessories",
+  "new_price": 45,
+  "old_price": 50,
+  "createdAt": {
+    "$date": "2024-09-20T12:14:43.018Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:14:43.018Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed679943264140c9740ad3"
+  },
+  "id": 14,
+  "name": "Red LipStick",
+  "image": "http://localhost:8000/images/product_1726834585623.jpg",
+  "category": "Makeup",
+  "new_price": 15,
+  "old_price": 20,
+  "createdAt": {
+    "$date": "2024-09-20T12:16:25.645Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:16:25.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed67b743264140c9740ad6"
+  },
+  "id": 15,
+  "name": "Eye Liner",
+  "image": "http://localhost:8000/images/product_1726834615647.jpg",
+  "category": "Makeup",
+  "new_price": 25,
+  "old_price": 30,
+  "createdAt": {
+    "$date": "2024-09-20T12:16:55.670Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:16:55.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed67ea43264140c9740adb"
+  },
+  "id": 16,
+  "name": "Stylish Makeup",
+  "image": "http://localhost:8000/images/product_1726834666679.jpg",
+  "category": "Makeup",
+  "new_price": 15,
+  "old_price": 20,
+  "createdAt": {
+    "$date": "2024-09-20T12:17:46.700Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:17:46.700Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed681243264140c9740ade"
+  },
+  "id": 17,
+  "name": "Makeup Bag",
+  "image": "http://localhost:8000/images/product_1726834706636.jpg",
+  "category": "Makeup",
+  "new_price": 45,
+  "old_price": 50,
+  "createdAt": {
+    "$date": "2024-09-20T12:18:26.692Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:18:26.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed683f43264140c9740ae3"
+  },
+  "id": 18,
+  "name": "Makeup Kit",
+  "image": "http://localhost:8000/images/product_1726834751263.jpg",
+  "category": "Makeup",
+  "new_price": 65,
+  "old_price": 70,
+  "createdAt": {
+    "$date": "2024-09-20T12:19:11.282Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:19:11.282Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed685743264140c9740ae6"
+  },
+  "id": 19,
+  "name": "Simple Kit",
+  "image": "http://localhost:8000/images/product_1726834775567.jpg",
+  "category": "Makeup",
+  "new_price": 35,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:19:35.584Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:19:35.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ed687d43264140c9740ae9"
+  },
+  "id": 20,
+  "name": "Women Makeup Base",
+  "image": "http://localhost:8000/images/product_1726834813319.jpg",
+  "category": "Makeup",
+  "new_price": 35,
+  "old_price": 40,
+  "createdAt": {
+    "$date": "2024-09-20T12:20:13.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T12:20:13.333Z"
+  },
+  "__v": 0
+}]
