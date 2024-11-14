@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 import './CartItems.css';
 import { Homecontext } from '../../Context/Homecontext';
@@ -5,7 +6,7 @@ import remove_icon from '../Assets/cart_cross_icon.png';
 import { Link } from 'react-router-dom';
 
 export const CartItems = () => {
-  const { getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext(Homecontext);
+  const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(Homecontext);
 
   return (
     <div className='cartitems'>
@@ -28,7 +29,7 @@ export const CartItems = () => {
                 <p>${product.new_price}</p>
                 <button className='cartitems-quantity'>{cartItems[product.id]}</button>
                 <p>${(product.new_price * cartItems[product.id]).toFixed(2)}</p>
-                <img   className='cartitems-remove-icon'
+                <img className='cartitems-remove-icon'
                   src={remove_icon}
                   onClick={() => removeFromCart(product.id)}
                   alt="Remove"
@@ -40,36 +41,33 @@ export const CartItems = () => {
         }
         return null;
       })}
- 
- <div  className='cartitems-down'>
-  <div   className='cartitems-total'>
-    <h1>cart Total</h1>
-    <div>
-      <div className='cartitems-total-item'>
-        <p>Subtotal</p>
-        <p>${getTotalCartAmount()}</p>
-      </div>
-      <hr/>
-      <div  className='cartitems-total-item'>
-        <p>Shipping Fee</p>
-        <p>Free</p>
-      </div>
-      <hr/>
-      <div    className='cartitems-total-item'>
-        <h3>Total</h3>
-        <h3>${getTotalCartAmount()}</h3>
-      </div>
-    </div>
-    <Link to="/Proceed-To-Checkout" ><button >PROCEED TO CHECKOUT</button></Link>
 
-  </div>
+      <div className='cartitems-down'>
+        <div className='cartitems-total'>
+          <h1>cart Total</h1>
+          <div>
+            <div className='cartitems-total-item'>
+              <p>Subtotal</p>
+              <p>${getTotalCartAmount()}</p>
+            </div>
+            <hr />
+            <div className='cartitems-total-item'>
+              <p>Shipping Fee</p>
+              <p>Free</p>
+            </div>
+            <hr />
+            <div className='cartitems-total-item'>
+              <h3>Total</h3>
+              <h3>${getTotalCartAmount()}</h3>
+            </div>
+          </div>
+          <Link to="/Proceed-To-Checkout" ><button >PROCEED TO CHECKOUT</button></Link>
 
- </div>
- 
-        
-       
-  
-    
+        </div>
+
+      </div>
+
+
     </div>
   );
 }

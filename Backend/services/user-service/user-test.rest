@@ -1,0 +1,8 @@
+post http://localhost:4000/signup
+Content-Type: application/json
+Authorization: : auth-token
+{
+    "name":"muneeb1",
+    "email":"muneeb1@gmail.com",
+    "password":"1Muneeb123"
+}

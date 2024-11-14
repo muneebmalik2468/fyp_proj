@@ -1,20 +1,26 @@
-import React, { useState } from "react";
-import './OrderList.css'
-import { useEffect } from "react";
-
-
+import React, { useState, useEffect } from "react";
+import './OrderList.css';
 
 const OrderList = () => {
     const [allorders, setAllOrders] = useState([]);
-    // if(localStorage.getItem('auth-token')){
+
     const fetchInfo = async () => {
-        await fetch('http://localhost:4000/allorders').then((res) => res.json()).then((data) => { setAllOrders(data) });
-    }
+        try {
+            const response = await fetch('http://localhost:7000/allorders');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log('Fetched data:', data); 
+            setAllOrders(data);
+        } catch (error) {
+            console.error('Error fetching orders:', error);
+        }
+    };
+
     useEffect(() => {
         fetchInfo();
-    }, [])
-    // }
-
+    }, []);
 
     return (
         <div className="list-product">
@@ -27,31 +33,63 @@ const OrderList = () => {
                 <p>Contact</p>
                 <p>Total</p>
                 <p>Status</p>
+                <p>Cart Items</p> {/* Added this header for cart items */}
             </div>
             <div className="listprod-allprod">
                 <hr />
-                {allorders.map((product, index) => {
-                    return <> <div key={index} className="listprod-format-main listprod-format">
-                        <p>{product.id}</p>
-                        <p>{product.name}</p>
-                        <p>{product.email}</p>
-                        <p>{product.address}</p>
-                        <p>{product.contact}</p>
-                        <p>{product.total}</p>
-                        <p><select name="" id="">
-                            <option value="">{product.status}</option>
-                            <option value="">processing</option>
-                            <option value="">delivered</option>
-                            </select>
-                        </p>
-                    </div>
-                        <hr />
-                    </>
-                })}
-
+                {allorders.length === 0 ? (
+                    <p>No orders found.</p>
+                ) : (
+                    allorders.map((order) => (
+                        <div key={order.id} className="listprod-format-main listprod-format">
+                            <p>{order.id}</p>
+                            <p>{order.email}</p>
+                            <p>{order.name}</p>
+                            <p>{order.address}</p>
+                            <p>{order.contact}</p>
+                            <p>{order.total}</p>
+                            <p>
+                                <select>
+                                    <option value={order.status}>{order.status}</option>
+                                    <option value="processing">Processing</option>
+                                    <option value="delivered">Delivered</option>
+                                </select>
+                            </p>
+                            
+                            {/* Cart Items Section */}
+                            <div className="cart-items-container">
+                                {order.cartItems && order.cartItems.length > 0 ? (
+                                    order.cartItems.map((item) => (
+                                        <div key={item._id} className="cart-item">
+                                            <img src={item.image} alt={item.name} />
+                                            <div className="cart-item-details">
+                                                <span>{item.name}</span>
+                                                <span>Quantity: {item.quantity}</span>
+                                                <span>Price: ${item.new_price}</span>
+                                                <span className="cart-item-total">
+                                                    Total: ${(item.new_price * item.quantity).toFixed(2)}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <p>No cart items</p>
+                                )}
+                            </div>
+                        
+                        </div>
+                    ))
+                    
+                )}
+                <hr />
+                
             </div>
+            
         </div>
-    )
-}
+        
+    );
+};
 
-export default OrderList
+export default OrderList;
+
+

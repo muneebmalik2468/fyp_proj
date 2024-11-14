@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const { type } = require("os");
+const mongoose = require("../config/db");
 
 const Product = new mongoose.Schema({
     id:{

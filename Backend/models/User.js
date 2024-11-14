@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-const { type } = require("os");
+const mongoose = require("../config/db");
 
 const User = new mongoose.Schema({
     name:{
@@ -14,6 +13,11 @@ const User = new mongoose.Schema({
     password:{
         type: String,
         required: true
+    },
+    role:{
+        type: Boolean,
+        required: true,
+        default: 0
     },
     cartData:{
         type: Object,
